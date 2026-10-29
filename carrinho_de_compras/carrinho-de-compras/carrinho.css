@@ -1,0 +1,44 @@
+body {
+    background-color: #eeeeee;
+}
+
+/* Botões de + e - com aparência de ícone */
+.btn-icone {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Foco visível para quem navega pelo teclado */
+.btn-icone:focus-visible,
+.close:focus-visible {
+    outline: 3px solid #201e40;
+    outline-offset: 2px;
+}
+
+/* Telas com até 991px de largura */
+@media (max-width: 991px) {
+    #heading  { padding-left: 50px; }
+    #prc      { margin-left: 70px; padding-left: 110px; }
+    #quantity { padding-left: 48px; }
+    #produc   { padding-left: 40px; }
+    #total    { padding-left: 54px; }
+}
+
+/* Telas com até 767px de largura (celulares) */
+@media (max-width: 767px) {
+    .mobile          { font-size: 10px; }
+    .h5              { font-size: 14px; }
+    .h6              { font-size: 9px; }
+    .mobile-font     { font-size: 11px; }
+    #prc             { font-weight: 700; margin-left: -45px; padding-left: 105px; }
+    #quantity        { font-weight: 700; padding-left: 6px; }
+    #produc          { font-weight: 700; padding-left: 0px; }
+    #total           { font-weight: 700; padding-left: 9px; }
+    .imagem-produto  { width: 60px; height: 60px; }
+    .zero-pad        { padding: 2%; margin-left: 10px; }
+    .footer-font     { font-size: 12px; }
+    #heading         { padding-top: 15px; }
+}
